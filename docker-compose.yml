@@ -3,6 +3,4 @@ services:
   explorer_backend:
     image: blackblog_hugo:0.1
     ports:
-    - 1313:1313
-    command:
-    - serve
+    - 1313:80
