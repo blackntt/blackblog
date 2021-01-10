@@ -25,7 +25,7 @@ RUN /hugo --minify --enableGitInfo
 FROM nginx:1.15-alpine
 
 WORKDIR /usr/share/nginx/html/
-
+RUN chown nginx:nginx /usr/share/nginx/html/*
 # Clean the default public folder
 RUN rm -fr * .??*
 
