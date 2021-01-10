@@ -17,7 +17,7 @@ RUN apk add --no-cache git
 # The source files are copied to /site
 COPY ./ /site
 WORKDIR /site
-RUN hugo
+RUN /hugo
 # stage 2
 FROM nginx:1.15-alpine
 COPY --from=build /site/public /usr/share/nginx/html
