@@ -1,7 +1,8 @@
 title = "Notre-Dame de Paris"
 baseURL = "https://example.com"
 languageCode = "en-us"
-theme = "ananke"
+theme = "gohugo-theme-ananke"
+themesDir = "../.."
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
