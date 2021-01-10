@@ -23,9 +23,9 @@ RUN /hugo --minify --enableGitInfo
 
 # stage 2
 FROM nginx:1.15-alpine
-
+COPY --from=build /site/public /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html/
-RUN chown nginx:nginx /usr/share/nginx/html/*
+
 # Clean the default public folder
 RUN rm -fr * .??*
 
