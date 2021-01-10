@@ -1,0 +1,6 @@
+version: "3"
+services:
+  explorer_backend:
+    image: blackblog_hugo:0.1
+    ports:
+    - 1313:80
