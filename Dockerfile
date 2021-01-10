@@ -20,8 +20,9 @@ WORKDIR /site
 RUN /hugo
 # stage 2
 FROM nginx:1.15-alpine
-RUN rm -fr * .??*
+
 COPY --from=build /site/public /usr/share/nginx/html
+COPY --from=build /site/public /usr/share/nginx/html/asdf
 WORKDIR /usr/share/nginx/html/
 
 # Clean the default public folder
