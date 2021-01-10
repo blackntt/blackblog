@@ -62,15 +62,3 @@ params:
 
 permalinks:
   post: "/:filename/"
-
-menu:
-  main:
-    - name: Blog
-      url: /
-      weight: 1
-    - name: Algo
-      url: /post/algo
-      weight: 2
-    - name: Blockchain
-      url: /post/blockchain/
-      weight: 3
