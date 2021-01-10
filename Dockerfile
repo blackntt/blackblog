@@ -12,6 +12,7 @@ RUN wget --quiet "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER
 COPY ./ /site
 WORKDIR /site
 RUN hugo --minify -v
+RUN ls /site/public
 
 #Copy static files to Nginx
 FROM nginx:alpine
