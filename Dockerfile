@@ -9,7 +9,7 @@ ARG VERSION=0.55.6
 
 ADD https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.tar.gz /hugo.tar.gz
 RUN tar -zxvf hugo.tar.gz
-RUN /hugo version
+RUN mv hugo /usr/bin
 
 # We add git to the build stage, because Hugo needs it with --enableGitInfo
 RUN apk add --no-cache git
@@ -17,12 +17,11 @@ RUN apk add --no-cache git
 # The source files are copied to /site
 COPY ./ /site
 WORKDIR /site
-RUN /hugo
+RUN hugo
 # stage 2
 FROM nginx:1.15-alpine
 
 COPY --from=build /site/public /usr/share/nginx/html
-COPY --from=build /site/public /usr/share/nginx/html/asdf
 WORKDIR /usr/share/nginx/html/
 
 # Clean the default public folder
