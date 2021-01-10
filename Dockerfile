@@ -15,19 +15,16 @@ RUN /hugo version
 RUN apk add --no-cache git
 
 # The source files are copied to /site
-COPY . /site
+COPY ./ /site
 WORKDIR /site
-
-# And then we just run Hugo
-RUN /hugo --minify --enableGitInfo
-
+RUN hugo
 # stage 2
 FROM nginx:1.15-alpine
 COPY --from=build /site/public /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html/
 
 # Clean the default public folder
-RUN rm -fr * .??*
+# RUN rm -fr * .??*
 
 COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
