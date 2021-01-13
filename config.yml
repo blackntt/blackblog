@@ -2,7 +2,7 @@ title: "Black's Blog"
 baseURL: "https://blackblog.net/"
 theme: ghostwriter
 languageCode: en-us
-copyright: Blackntt
+copyright: blackntt
 disqusShortname: XXX
 googleAnalytics: XXX
 pygmentsUseClasses: true
@@ -64,12 +64,15 @@ permalinks:
 
 menu:
   main:
-    - name: Blog
+    - name: All
       url: /
       weight: 1
-    - name: Projects
-      url: /project/
-      weight: 2
-    - name: About
-      url: /page/about/
-      weight: 3
+    - name: Algorithms
+      url: /post/blockchain/
+      weigth: 2
+    - name: Blockchain
+      url: /post/blockchain/
+      weigth: 2
+    - name: C++
+      url: /post/cplusplus/
+      weigth: 2
