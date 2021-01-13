@@ -1,5 +1,5 @@
 title: "Black's Blog"
-baseURL: "http://localhost:1313/"
+baseURL: "https://new.blackblog.net/"
 theme: ghostwriter
 languageCode: en-us
 copyright: blackntt
