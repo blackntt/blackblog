@@ -1,5 +1,5 @@
 title: "Black's Blog"
-baseURL: "https://blackblog.net/"
+baseURL: "http://localhost:1313/"
 theme: ghostwriter
 languageCode: en-us
 copyright: blackntt
@@ -33,6 +33,7 @@ author:
 
 taxonomies:
   tag: tags
+  category: categories
 
 params:
   mainSections:
@@ -41,12 +42,11 @@ params:
   headline: Black's Blog
   description: This is the black's blog
   github: "https://github.com/blackntt"
-  linkedin: "https://linkedin.com/in/XXX/"
-  facebook: "https://www.facebook.com/toan.nguyen"
+  linkedin: "https://www.linkedin.com/in/toan-nguyen-7635491a2"
+  facebook: "https://www.facebook.com/black.toannguyen"
   email: blackntt@gmail.com
   opengraph: true
   shareTwitter: true
-  rss: true
   shareFacebook: true
   shareLinkedIn: false
   dateFormat: "Mon, Jan 2, 2006"
@@ -64,15 +64,15 @@ permalinks:
 
 menu:
   main:
-    - name: All
+    - name: Blog
       url: /
       weight: 1
     - name: Algorithms
-      url: /post/blockchain/
-      weigth: 2
-    - name: Blockchain
-      url: /post/blockchain/
-      weigth: 2
-    - name: C++
-      url: /post/cplusplus/
-      weigth: 2
+      url: /categories/algorithms/
+      weight: 2
+    # - name: Blockchain
+    #   url: /categories/blockchain/
+    #   weight: 3
+    - name: About
+      url: /page/about/
+      weight: 4
