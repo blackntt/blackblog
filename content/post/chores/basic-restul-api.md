@@ -2,7 +2,7 @@
 title: "Basic Restul Api"
 date: 2021-01-21T00:53:36+07:00
 tags:
-  - Restul
+  - Restful
 draft: true
 ---
 - Trong Restful sử dụng 4 động từ GET/POST/PUT/DELETE
