@@ -1,5 +1,5 @@
 ---
-title: "Basic Restul Api"
+title: "Basic Restful Api"
 date: 2021-01-21T00:53:36+07:00
 tags:
   - Restful
