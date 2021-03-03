@@ -37,7 +37,7 @@ git merge release/0.1.0
 git checkout develop
 git merge release/0.1.0
 ```
-**Fix bug on master:**
+**Hotfix on master:**
 ```c++
 git checkout master
 git checkout -b hotfix_branch
