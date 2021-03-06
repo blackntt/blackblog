@@ -2,8 +2,7 @@ name: Prod Deploy
 
 on:
   push:
-    branches:
-    - 'releases/**'
+    branches: [master, 'releases/**']
 
 jobs:
 
